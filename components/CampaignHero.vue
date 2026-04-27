@@ -8,6 +8,7 @@ defineProps<{
 
 const photoLoaded = ref(false)
 const photoFailed = ref(false)
+const photoPath = '/wayne.jpg'
 </script>
 
 <template>
@@ -32,7 +33,7 @@ const photoFailed = ref(false)
           <div class="hero__frame">
             <img
               class="hero__img"
-              src="/wayne.jpg"
+              :src="photoPath"
               alt=""
               width="480"
               height="600"
